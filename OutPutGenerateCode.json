@@ -1580,5 +1580,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "VL55MRY31": {
+            "code": "VL55MRY31",
+            "deviceId": "300a4289de7858b9cb6f5ab9ea585353",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 5,
+                    "packType": 22
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
