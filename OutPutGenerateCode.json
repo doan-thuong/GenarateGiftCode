@@ -1622,5 +1622,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "dA6aUa0oi": {
+            "code": "dA6aUa0oi",
+            "deviceId": "34F8CA8E-1805-42E9-952B-B03A10D11E95",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 5,
+                    "packType": 22
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
