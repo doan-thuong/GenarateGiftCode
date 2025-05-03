@@ -14,13 +14,13 @@ def check_duplicate(str, listStr):
         
     return True
 
-def delete_element_in_file_json(codes_to_delete):
-    with open("file.json", "r", encoding="utf-8") as f:
+def delete_element_in_file_json(codes_to_delete, path_file):
+    with open(path_file, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     data = [item for item in data if list(item.keys())[0] not in codes_to_delete]
 
-    with open("file.json", "w", encoding="utf-8") as f:
+    with open(path_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 def append_json_to_file(file_path, data_append):
