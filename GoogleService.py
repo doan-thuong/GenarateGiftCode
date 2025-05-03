@@ -75,7 +75,6 @@ def write_values_to_row_bulk(sheet, headers, row_number, data_dict):
     cell_range = gspread.utils.rowcol_to_a1(row_number, 1) + ":" + gspread.utils.rowcol_to_a1(row_number, len(headers))
     sheet.update(cell_range, [updated_row])
 
-    os.system("cls")
     global COUNT
     COUNT += 1
     print(f"{COUNT} time")
