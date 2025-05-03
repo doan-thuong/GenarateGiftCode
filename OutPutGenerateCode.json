@@ -1650,5 +1650,47 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "b0U8aamCB": {
+            "code": "b0U8aamCB",
+            "deviceId": "32a209605cfe7c262b5072d4016eacac",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "6YY6X70i5": {
+            "code": "6YY6X70i5",
+            "deviceId": "e805931335a6bc3e49bd073c0fc7cf70",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "ypHMulHde": {
+            "code": "ypHMulHde",
+            "deviceId": "6789f430e9af5167bf22551073d3d0b3",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
