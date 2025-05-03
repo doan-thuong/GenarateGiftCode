@@ -1692,5 +1692,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "Se1jfFZ8G": {
+            "code": "Se1jfFZ8G",
+            "deviceId": "8ae0270d1b0554214a67ad6f7dc0d068",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
