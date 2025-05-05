@@ -1,4 +1,4 @@
-import AutoCreateGiftCode as auto
+import Main as auto
 import HandleStringService as handleStr
 import json
 
