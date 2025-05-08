@@ -1,5 +1,5 @@
 import Main as auto
-import HandleStringService as handleStr
+import service.HandleStringService as handleStr
 import json
 
 

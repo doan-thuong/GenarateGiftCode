@@ -1,10 +1,10 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-import HandleStringService as strService
+import service.HandleStringService as strService
 
-import HandleStringService as strService
-import GoogleService as gg
+import service.HandleStringService as strService
+import service.GoogleService as gg
 
 # Khởi tạo Firebase với file JSON credentials
 service_account_path = "E:/Download/ezg-nightfall-firebase-adminsdk-.json"
