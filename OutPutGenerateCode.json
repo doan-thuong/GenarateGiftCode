@@ -124,5 +124,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "0dwx3mzu5": {
+            "code": "0dwx3mzu5",
+            "deviceId": "081a3e4fc78aa8c11f6a5124195a7d87",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
