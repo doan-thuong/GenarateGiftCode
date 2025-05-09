@@ -138,5 +138,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "jbCAZNd4l": {
+            "code": "jbCAZNd4l",
+            "deviceId": "739cd9c5adcd075b7625476a15c41dac",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
