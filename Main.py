@@ -15,7 +15,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 doc_ref = db.collection("game_config").document("gift_code")
 
-def create_gift_code(deviceId, packId, packType):
+def create_gift_code(deviceId, packs):
     doc = doc_ref.get()
 
     list_code = read_gift_codes()
@@ -30,7 +30,7 @@ def create_gift_code(deviceId, packId, packType):
         render_code = strService.gen_random_string()
     
     return {
-        render_code: get_gift_code_data(render_code, deviceId, packId, packType)
+        render_code: get_gift_code_data(render_code, deviceId, packs)
     }
 
 def update_gift_code(giftCodes):
@@ -69,17 +69,23 @@ def delete_gift_code(gift_codes_to_delete):
     doc_ref.update(delete)
     print("Deleted!")
 
-def get_gift_code_data(code, deviceId, packId, packType):
+def handle_packs(packs_old):
+    packs_new = []
+
+    for pack in packs_old:
+        packs_new.append({
+            "packId": pack[0],
+            "packType": pack[1]
+        })
+    
+    return packs_new
+
+def get_gift_code_data(code, deviceId, packs):
     gift_code_data = {
         "code": code,
         "deviceId": deviceId,
         "giftCodeType": 1,
-        "packs": [
-            {
-                "packId": packId,
-                "packType": packType
-            }
-        ],
+        "packs": packs,
         "rewards": []
     }
     return gift_code_data
@@ -103,19 +109,23 @@ if __name__ == '__main__':
     for user in list_user:
         device = user.get("Device Id")
         
-        pack = list(map(int, user["Pack"].split("\n")))
-        packId = pack[0]
-        packType = pack[1]
+        pack_split_enter = list(map(str, user["Pack"].split("\n")))
+        pack_split_dash = []
 
-        gen_code = create_gift_code(device, packId, packType)
+        for pack in pack_split_enter:
+            pack_split_dash.append(pack.split("-"))
+
+        packs = handle_packs(pack_split_dash)
+
+        gen_code = create_gift_code(device, packs)
         list_gift_code.append(gen_code)
 
-        dict_data_cell = get_dict_set_cell_sheet(list(gen_code.keys())[0], 1)
-        row = user["row"]
-        gg.write_values_to_row_bulk(sheet, headers, row, dict_data_cell)
+        # dict_data_cell = get_dict_set_cell_sheet(list(gen_code.keys())[0], 1)
+        # row = user["row"]
+        # gg.write_values_to_row_bulk(sheet, headers, row, dict_data_cell)
 
     # Update gift code trên firebase
-    update_gift_code(list_gift_code)
+    # update_gift_code(list_gift_code)
 
     # Write gift code vừa tạo vào file json để check
     strService.append_json_to_file("OutPutGenerateCode.json", list_gift_code)
