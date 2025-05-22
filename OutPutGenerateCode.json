@@ -278,5 +278,23 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "dU9w6SI2T": {
+            "code": "dU9w6SI2T",
+            "deviceId": "321fa70cf18f27601cd5e81cb30ebb9e",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1001,
+                    "packType": 1
+                },
+                {
+                    "packId": 1002,
+                    "packType": 1
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
