@@ -74,8 +74,8 @@ def handle_packs(packs_old):
 
     for pack in packs_old:
         packs_new.append({
-            "packId": pack[0],
-            "packType": pack[1]
+            "packId": int(pack[0]),
+            "packType": int(pack[1])
         })
     
     return packs_new
@@ -125,7 +125,7 @@ if __name__ == '__main__':
         # gg.write_values_to_row_bulk(sheet, headers, row, dict_data_cell)
 
     # Update gift code trên firebase
-    # update_gift_code(list_gift_code)
+    update_gift_code(list_gift_code)
 
     # Write gift code vừa tạo vào file json để check
     strService.append_json_to_file("OutPutGenerateCode.json", list_gift_code)
