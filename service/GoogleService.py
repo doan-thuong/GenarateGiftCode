@@ -79,3 +79,9 @@ def write_values_to_row_bulk(sheet, headers, row_number, data_dict):
     COUNT += 1
     print(f"{COUNT} time")
     time.sleep(0.5)
+
+def get_dict_set_cell_sheet(code, is_check):
+    return {
+        "Trả lời/Phương án giải quyết (6)": "Gift code cho user: " + code,
+        "Is Create" : is_check
+    }
