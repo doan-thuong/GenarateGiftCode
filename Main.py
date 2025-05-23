@@ -150,9 +150,9 @@ if __name__ == '__main__':
         gen_code = create_gift_code(device, packs, rewards)
         list_gift_code.append(gen_code)
 
-        # dict_data_cell = get_dict_set_cell_sheet(list(gen_code.keys())[0], 1)
-        # row = user["row"]
-        # gg.write_values_to_row_bulk(sheet, headers, row, dict_data_cell)
+        dict_data_cell = get_dict_set_cell_sheet(list(gen_code.keys())[0], 1)
+        row = user["row"]
+        gg.write_values_to_row_bulk(sheet, headers, row, dict_data_cell)
 
     # Update gift code trên firebase
     update_gift_code(list_gift_code)
