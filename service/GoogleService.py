@@ -46,7 +46,7 @@ def get_rows_by_columns_optimized(sheet, columns_to_get):
     return result
 
 def get_data_from_gg_sheet(id_sheet, name_tab_sheet):
-  list_col = ["Device Id", "Pack", "Is Create"]
+  list_col = ["Device Id", "Pack", "Reward", "Is Create"]
 
   sheet = get_sheet(id_sheet, name_tab_sheet)
   data = get_rows_by_columns_optimized(sheet, list_col)

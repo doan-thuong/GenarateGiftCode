@@ -15,7 +15,7 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 doc_ref = db.collection("game_config").document("gift_code")
 
-def create_gift_code(deviceId, packs):
+def create_gift_code(deviceId, packs, rewards):
     doc = doc_ref.get()
 
     list_code = read_gift_codes()
@@ -30,7 +30,7 @@ def create_gift_code(deviceId, packs):
         render_code = strService.gen_random_string()
     
     return {
-        render_code: get_gift_code_data(render_code, deviceId, packs)
+        render_code: get_gift_code_data(render_code, deviceId, packs, rewards)
     }
 
 def update_gift_code(giftCodes):
@@ -80,13 +80,27 @@ def handle_packs(packs_old):
     
     return packs_new
 
-def get_gift_code_data(code, deviceId, packs):
+def handle_reward(reward_old):
+    reward_new = []
+
+    for reward in reward_old:
+        reward_new.append({
+            "resId": int(reward[0]),
+            "resLevel": int(reward[1]),
+            "resNumber": int(reward[2]),
+            "resRarity": int(reward[3]),
+            "resType": int(reward[4])
+        })
+
+    return reward_new
+
+def get_gift_code_data(code, deviceId, packs, rewards):
     gift_code_data = {
         "code": code,
         "deviceId": deviceId,
         "giftCodeType": 1,
         "packs": packs,
-        "rewards": []
+        "rewards": rewards
     }
     return gift_code_data
 
@@ -107,22 +121,38 @@ if __name__ == '__main__':
     headers = sheet.row_values(1)
 
     for user in list_user:
-        device = user.get("Device Id")
-        
-        pack_split_enter = list(map(str, user["Pack"].split("\n")))
-        pack_split_dash = []
+        device = user["Device Id"]
 
-        for pack in pack_split_enter:
-            pack_split_dash.append(pack.split("-"))
+        # set pack
+        packs_from_user = user["Pack"]
+        pack_split_dash = []
+        
+        if packs_from_user:
+            pack_split_enter = list(map(str, packs_from_user.split("\n")))
+
+            for pack in pack_split_enter:
+                pack_split_dash.append(pack.split("-"))
+
+        # set reward
+        rewards_from_user = user["Reward"]
+        reward_split_dash = []
+
+        if rewards_from_user:
+            reward_split_enter = list(map(str, rewards_from_user.split("\n")))
+
+            for reward in reward_split_enter:
+                reward_split_dash.append(reward.split("-"))
+                
 
         packs = handle_packs(pack_split_dash)
+        rewards = handle_reward(reward_split_dash)
 
-        gen_code = create_gift_code(device, packs)
+        gen_code = create_gift_code(device, packs, rewards)
         list_gift_code.append(gen_code)
 
-        dict_data_cell = get_dict_set_cell_sheet(list(gen_code.keys())[0], 1)
-        row = user["row"]
-        gg.write_values_to_row_bulk(sheet, headers, row, dict_data_cell)
+        # dict_data_cell = get_dict_set_cell_sheet(list(gen_code.keys())[0], 1)
+        # row = user["row"]
+        # gg.write_values_to_row_bulk(sheet, headers, row, dict_data_cell)
 
     # Update gift code trên firebase
     update_gift_code(list_gift_code)
