@@ -296,5 +296,41 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "rFX0nYF5e": {
+            "code": "rFX0nYF5e",
+            "deviceId": "c5c3dbb8fo45f7b2cefd6344080813cb",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": [
+                {
+                    "resId": 2010,
+                    "resLevel": 0,
+                    "resNumber": 1,
+                    "resRarity": 3,
+                    "resType": 1
+                },
+                {
+                    "resId": 1,
+                    "resLevel": 0,
+                    "resNumber": 4000,
+                    "resRarity": 0,
+                    "resType": 0
+                },
+                {
+                    "resId": 15,
+                    "resLevel": 0,
+                    "resNumber": 300,
+                    "resRarity": 0,
+                    "resType": 0
+                }
+            ]
+        }
     }
 ]
