@@ -58,22 +58,18 @@ def get_data_from_gg_sheet(id_sheet, name_tab_sheet):
   return data
 
 def write_values_to_row_bulk(sheet, headers, row_number, data_dict):
-    try:
-        row_values = sheet.row_values(row_number) if row_number <= sheet.row_count else []
-    except:
-        row_values = []
-
-    updated_row = row_values + [""] * (len(headers) - len(row_values))
+    cells_to_update = []
 
     for col_name, value in data_dict.items():
         try:
-            col_index = headers.index(col_name)
-            updated_row[col_index] = value
+            col_index = headers.index(col_name) + 1
+            cell = gspread.Cell(row_number, col_index, value)
+            cells_to_update.append(cell)
         except ValueError:
             print(f"Không tìm thấy cột '{col_name}' trong sheet.")
 
-    cell_range = gspread.utils.rowcol_to_a1(row_number, 1) + ":" + gspread.utils.rowcol_to_a1(row_number, len(headers))
-    sheet.update(cell_range, [updated_row])
+    if cells_to_update:
+        sheet.update_cells(cells_to_update)
 
     global COUNT
     COUNT += 1
