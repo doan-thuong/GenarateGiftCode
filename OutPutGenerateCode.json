@@ -388,5 +388,23 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "H6186Yz3t": {
+            "code": "H6186Yz3t",
+            "deviceId": "BD8D74EB-C663-4F0F-87CE-FEE1D53590A2",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                },
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
