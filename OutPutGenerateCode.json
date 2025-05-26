@@ -332,5 +332,19 @@
                 }
             ]
         }
+    },
+    {
+        "BLWyzIwDD": {
+            "code": "BLWyzIwDD",
+            "deviceId": "86a3e6caa7a3da36a0cc7339f134fe34",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
