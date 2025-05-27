@@ -488,5 +488,50 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "GPMzFS3T7": {
+            "code": "GPMzFS3T7",
+            "deviceId": "F2EF1B33-0E30-4E40-9EB6-EE7133A47D76",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "r0TrUyr8k": {
+            "code": "r0TrUyr8k",
+            "deviceId": "a7b84b2a35f037faec4a867ed4c0799b",
+            "giftCodeType": 1,
+            "packs": [],
+            "rewards": [
+                {
+                    "resId": 4005,
+                    "resLevel": 0,
+                    "resNumber": 2,
+                    "resRarity": 3,
+                    "resType": 1
+                },
+                {
+                    "resId": 24,
+                    "resLevel": 0,
+                    "resNumber": 300,
+                    "resRarity": 0,
+                    "resType": 0
+                },
+                {
+                    "resId": 0,
+                    "resLevel": 0,
+                    "resNumber": 200000,
+                    "resRarity": 0,
+                    "resType": 0
+                }
+            ]
+        }
     }
 ]
