@@ -1,4 +1,4 @@
-import Main as auto
+import service.FireBaseService as auto
 import service.HandleStringService as handleStr
 import json
 
