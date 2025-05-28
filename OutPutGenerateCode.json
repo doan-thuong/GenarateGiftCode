@@ -533,5 +533,23 @@
                 }
             ]
         }
+    },
+    {
+        "AUfyWqVGn": {
+            "code": "AUfyWqVGn",
+            "deviceId": "8650e99945b74051af23985bebcb025e",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                },
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
