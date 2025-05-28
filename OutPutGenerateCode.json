@@ -551,5 +551,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "IIef6vvOb": {
+            "code": "IIef6vvOb",
+            "deviceId": "89391beabc5b38f90d070912d8f1187e",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
