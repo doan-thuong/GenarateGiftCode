@@ -565,5 +565,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "nmDYsLidV": {
+            "code": "nmDYsLidV",
+            "deviceId": "0e9fbab6fe6db6ce72bc0b95b511bf2c",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
