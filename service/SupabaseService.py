@@ -19,9 +19,9 @@ def insert_mail(mail_id, create_at, title, des, status, reward_status, reward, p
 def read_data_from_table(name_table):
     response = supabase.table(name_table).select("*").execute()
 
-    return response
+    return response.data
 
 def read_data_from_table_with_filter(name_table, col, condition):
     response = supabase.table(name_table).select("*").eq(col, condition).execute()
 
-    return response
+    return response.data
