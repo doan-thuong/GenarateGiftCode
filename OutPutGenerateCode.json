@@ -814,5 +814,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "IhQkG1pbj": {
+            "code": "IhQkG1pbj",
+            "deviceId": "b68008cd61078142a29b787ecd9473dd",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
