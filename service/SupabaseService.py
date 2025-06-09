@@ -22,6 +22,9 @@ def read_data_from_table(name_table):
     return response.data
 
 def read_data_from_table_with_filter(name_table, col, condition):
-    response = supabase.table(name_table).select("*").eq(col, condition).execute()
+    if not col and not condition:
+        response = supabase.table(name_table).select("*").execute()
+    else:
+        response = supabase.table(name_table).select("*").eq(col, condition).execute()
 
     return response.data
