@@ -828,5 +828,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "V2yEN3ye2": {
+            "code": "V2yEN3ye2",
+            "deviceId": "399c17ba5e5aff500f54afc586838704",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
