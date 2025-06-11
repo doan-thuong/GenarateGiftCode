@@ -842,5 +842,33 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "Cekym5sAW": {
+            "code": "Cekym5sAW",
+            "deviceId": "ecf63625486167d5c4fe5dc2fcdcae3d",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "q521KDOb2": {
+            "code": "q521KDOb2",
+            "deviceId": "C33765B4-B3A0-4A90-933F-0EC58BEFB46C",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
