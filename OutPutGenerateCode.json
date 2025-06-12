@@ -870,5 +870,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "IbiwukLx2": {
+            "code": "IbiwukLx2",
+            "deviceId": "f96657e810db091a892834d1597dfc96",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
