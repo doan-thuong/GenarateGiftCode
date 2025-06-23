@@ -972,5 +972,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "krbbglQzQ": {
+            "code": "krbbglQzQ",
+            "deviceId": "5d95f64589ab5d46fa816cd41cc18169",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
