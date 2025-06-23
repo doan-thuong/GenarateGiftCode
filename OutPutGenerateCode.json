@@ -912,5 +912,65 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "c9aedEmJN": {
+            "code": "c9aedEmJN",
+            "deviceId": "bce303f10b69e0001b30d8ffb370a0e4",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                },
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "ZU9cHCIjF": {
+            "code": "ZU9cHCIjF",
+            "deviceId": "8abf02723303969ee612ebda394873cb",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "bRqfonicG": {
+            "code": "bRqfonicG",
+            "deviceId": "2c793bf19406cdbef901754b5ef1572e",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "cJji4RXYx": {
+            "code": "cJji4RXYx",
+            "deviceId": "8077c928000cc990d7b662705285b378",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
