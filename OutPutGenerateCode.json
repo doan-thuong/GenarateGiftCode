@@ -12,5 +12,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "1RL5YygGk": {
+            "code": "1RL5YygGk",
+            "deviceId": "210C9F9B-3F23-4B32-B8EF-A27C2FC40F06",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
