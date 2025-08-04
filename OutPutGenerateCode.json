@@ -184,5 +184,122 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "ZRxAj8R5b": {
+            "code": "ZRxAj8R5b",
+            "deviceId": "2c7d6726357b06a774d5742a745ac7c8",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": [
+                {
+                    "resId": 1011,
+                    "resLevel": 0,
+                    "resNumber": 1,
+                    "resRarity": 3,
+                    "resType": 1
+                },
+                {
+                    "resId": 2002,
+                    "resLevel": 0,
+                    "resNumber": 1,
+                    "resRarity": 3,
+                    "resType": 1
+                }
+            ]
+        }
+    },
+    {
+        "CLKJVg3IU": {
+            "code": "CLKJVg3IU",
+            "deviceId": "ee310669f5233a8ef677058aa2c2d79a",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                },
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "zmZEOzSZL": {
+            "code": "zmZEOzSZL",
+            "deviceId": "4222b17c1d921a778df68486a8e69484",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "PMwP9AETT": {
+            "code": "PMwP9AETT",
+            "deviceId": "da73093faddf23decaca69aac45c75d3",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "wXGQUtYG5": {
+            "code": "wXGQUtYG5",
+            "deviceId": "E44A7C37-2B12-45A1-AFCC-EE66BC58227D",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "jo3cuJB0x": {
+            "code": "jo3cuJB0x",
+            "deviceId": "2f91d2dfc122b113d6317c35fa41e9fa",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "yyGY7hddw": {
+            "code": "yyGY7hddw",
+            "deviceId": "a557cd83026fa917efa47c942bb5bdb0",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
