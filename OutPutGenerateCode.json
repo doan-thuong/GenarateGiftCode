@@ -399,5 +399,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "zkgQcnfpL": {
+            "code": "zkgQcnfpL",
+            "deviceId": "8c5be48b2b193bfbf97c8ff546bd154c",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
