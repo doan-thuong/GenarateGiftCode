@@ -301,5 +301,103 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "I0UiPmpyL": {
+            "code": "I0UiPmpyL",
+            "deviceId": "0C876A3E-8862-4ABB-9BCF-65DF3D53C1B9",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "pUpdlaPoS": {
+            "code": "pUpdlaPoS",
+            "deviceId": "19b29c33e98fdef39bb2552afa19ed40",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "hbNWnVmkk": {
+            "code": "hbNWnVmkk",
+            "deviceId": "783d7db0b495afc3eb88d91cf688ec9f",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "0UadpTmNV": {
+            "code": "0UadpTmNV",
+            "deviceId": "85eaa9d8c1e730f19a5e1504548f02ac",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 2
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "ObZ0FMu64": {
+            "code": "ObZ0FMu64",
+            "deviceId": "737acc8fecda96c523cf86e7e8c47ab2",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "YOajcxaf8": {
+            "code": "YOajcxaf8",
+            "deviceId": "74C58494-D275-4EAF-B45F-856DB5C7C617",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "F35bJOEPk": {
+            "code": "F35bJOEPk",
+            "deviceId": "e08fd692884d1ad505713caf52e3f0eb",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
