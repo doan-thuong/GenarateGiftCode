@@ -413,5 +413,33 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "FKNOcYoRj": {
+            "code": "FKNOcYoRj",
+            "deviceId": "adee1f6226f9675e789af95943273b16",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "IBJ6HWLg1": {
+            "code": "IBJ6HWLg1",
+            "deviceId": "25b4a30f39eca1da8f8598ec92a72e2e",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
