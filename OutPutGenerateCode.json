@@ -571,5 +571,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "Y2PSU7SqU": {
+            "code": "Y2PSU7SqU",
+            "deviceId": "ad5396dd8c06edb5cc7702d37e367e97",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
