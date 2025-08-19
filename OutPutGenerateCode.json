@@ -585,5 +585,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "klp48Q9LP": {
+            "code": "klp48Q9LP",
+            "deviceId": "710a11cbd72bf7070bdc28ea15c0ff03",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
