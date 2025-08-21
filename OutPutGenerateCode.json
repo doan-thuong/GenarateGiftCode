@@ -599,5 +599,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "guKpoeSrN": {
+            "code": "guKpoeSrN",
+            "deviceId": "a967e03fa6ceb2d9324441a564d5acdd",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 8
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
