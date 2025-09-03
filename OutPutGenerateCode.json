@@ -715,5 +715,85 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "P7naW9xJl": {
+            "code": "P7naW9xJl",
+            "deviceId": "4b994b1218a0db91f1f32ef9c0572572",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "WunyAZVnt": {
+            "code": "WunyAZVnt",
+            "deviceId": "0d982d6440759810e242558898c77dba",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "lK0vIT7Gn": {
+            "code": "lK0vIT7Gn",
+            "deviceId": "504bb1092fc7fcbba92433761924e1fe",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "ePMzSAK8U": {
+            "code": "ePMzSAK8U",
+            "deviceId": "38649541-9ED2-46FC-9D25-16C0BEE5C341",
+            "giftCodeType": 1,
+            "packs": [],
+            "rewards": [
+                {
+                    "resId": 1019,
+                    "resLevel": 0,
+                    "resNumber": 1,
+                    "resRarity": 3,
+                    "resType": 1
+                },
+                {
+                    "resId": 2019,
+                    "resLevel": 0,
+                    "resNumber": 1,
+                    "resRarity": 3,
+                    "resType": 1
+                },
+                {
+                    "resId": 3019,
+                    "resLevel": 0,
+                    "resNumber": 1,
+                    "resRarity": 3,
+                    "resType": 1
+                },
+                {
+                    "resId": 4019,
+                    "resLevel": 0,
+                    "resNumber": 1,
+                    "resRarity": 3,
+                    "resType": 1
+                }
+            ]
+        }
     }
 ]
