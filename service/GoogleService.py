@@ -1,8 +1,7 @@
 import gspread
 import time
-import os
 
-from oauth2client.service_account import ServiceAccountCredentials
+from google.oauth2.service_account import Credentials
 
 
 LINK_HEAD = "E:/project/security/"
@@ -10,7 +9,7 @@ COUNT = 0
 
 def get_sheet(id_sheet, name_tab_sheet):
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name(LINK_HEAD + "config/key-gg-config.json", scope)
+    creds = Credentials.from_service_account_file(LINK_HEAD + "config/key-gg-config.json", scopes=scope)
     client = gspread.authorize(creds)
     spreadsheet = client.open_by_key(id_sheet)
     return spreadsheet.worksheet(name_tab_sheet)
@@ -30,7 +29,7 @@ def get_rows_by_columns_optimized(sheet, columns_to_get):
     result = []
     for idx, row in enumerate(data_rows):
         row_number = idx + 2  # vì idx bắt đầu từ 0, dòng thực là từ 2
-        row_data = {"row": row_number}
+        row_data: dict = {"row": row_number}
         empty = True
 
         for col_name, col_idx in col_indexes.items():
