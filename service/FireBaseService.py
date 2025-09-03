@@ -1,6 +1,5 @@
-
-
-from firebase_admin import firestore
+from typing import Any
+from google.cloud.firestore_v1 import DELETE_FIELD
 
 from config import FireBaseConfig as fbConfig
 import service.HandleStringService as strService
@@ -17,7 +16,7 @@ def read_gift_codes():
             print("Not found gift_code")
             return {}
 
-        data = doc.to_dict()
+        data: dict[str, Any] = doc.to_dict() or {}
         gift_codes = data.get("giftCodes", {})
 
         if len(gift_codes) == 0:
@@ -70,7 +69,7 @@ def delete_gift_code(gift_codes_to_delete):
     if not gift_codes_to_delete:
         return
 
-    delete = {f"giftCodes.{code}": firestore.DELETE_FIELD for code in gift_codes_to_delete}
+    delete = {f"giftCodes.{code}": DELETE_FIELD for code in gift_codes_to_delete}
     DOC_REF.update(delete)
     strService.print_log(gift_codes_to_delete, "delete")
     print("Deleted!")
