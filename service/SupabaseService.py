@@ -9,6 +9,9 @@ path_key = "KeySupabase.key"
 url = SupabaseConfig.get_url_supabase(path_url, False)
 key = SupabaseConfig.get_key_supabase(path_key, False)
 
+if url is None or key is None:
+    raise ValueError("Supabase URL or Key is missing!")
+
 supabase: Client = create_client(url, key)
 
 def insert_mail(mail_id, create_at, title, des, status, reward_status, reward, player_id, table_name):
