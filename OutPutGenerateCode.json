@@ -795,5 +795,33 @@
                 }
             ]
         }
+    },
+    {
+        "ntOKWEdgZ": {
+            "code": "ntOKWEdgZ",
+            "deviceId": "ec21334b15a359ec97c318a5b671aa2d",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "72J1onWic": {
+            "code": "72J1onWic",
+            "deviceId": "f5625f2ec34066e923700903dd904b3b",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
