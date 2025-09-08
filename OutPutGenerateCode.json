@@ -823,5 +823,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "Osa5mRdDb": {
+            "code": "Osa5mRdDb",
+            "deviceId": "34261ba0cdbef7726c410ea04095b09d",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
