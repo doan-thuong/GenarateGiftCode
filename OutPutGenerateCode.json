@@ -837,5 +837,33 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "TXcW7ZpMV": {
+            "code": "TXcW7ZpMV",
+            "deviceId": "1341a4655e18d459de4316288935c6e3",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "CAWGAr55S": {
+            "code": "CAWGAr55S",
+            "deviceId": "800f1946bb5f7ac711982d18b77221d0",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
