@@ -31,3 +31,11 @@ def read_data_from_table_with_filter(name_table, col, condition):
         response = supabase.table(name_table).select("*").eq(col, condition).execute()
 
     return response.data
+
+def read_data_by_ilike_col(name_table, col, search_string: str):
+    response = supabase.table(name_table) \
+        .select("*") \
+        .ilike(col, f"{search_string}%") \
+        .execute()
+    
+    return response
