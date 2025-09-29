@@ -1113,5 +1113,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "qceCfDnXC": {
+            "code": "qceCfDnXC",
+            "deviceId": "667686B2-6C14-4290-9FC4-6C78F7DBA787",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
