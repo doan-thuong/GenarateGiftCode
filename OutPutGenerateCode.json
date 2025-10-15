@@ -1211,5 +1211,23 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "C5reriWIl": {
+            "code": "C5reriWIl",
+            "deviceId": "e2479cd89d1d18b69c11eb3f1d4e5f95",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                },
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
