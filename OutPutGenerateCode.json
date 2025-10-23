@@ -1261,5 +1261,23 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "gVyj9EVeK": {
+            "code": "gVyj9EVeK",
+            "deviceId": "cc04942a8027e76add4b9af28b81d03f",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                },
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
