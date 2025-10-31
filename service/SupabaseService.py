@@ -14,10 +14,18 @@ if url is None or key is None:
 
 supabase: Client = create_client(url, key)
 
-def insert_mail(mail_id, create_at, title, des, status, reward_status, reward, player_id, table_name):
-    data = ConfigMailSupabase.mail_box(mail_id, create_at, title, des, status, reward_status, reward, player_id)
+def insert_mail(mail_id, create_at, title, des, status, reward_status, reward, player_id, bonus_percent, table_name):
+    data = ConfigMailSupabase.mail_box(mail_id, create_at, title, des, status, reward_status, reward, player_id, bonus_percent)
 
-    supabase.table(table_name).insert(data).execute()
+    try:
+        res = supabase.table(table_name).insert(data).execute()
+        
+        return res
+    except Exception as e:
+        print("Insert fail")
+        print("Chi tiết lỗi:", e)
+        
+        return None
 
 def read_data_from_table(name_table):
     response = supabase.table(name_table).select("*").execute()
