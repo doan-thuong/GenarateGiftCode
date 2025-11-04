@@ -1293,5 +1293,33 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "ecsktfkFM": {
+            "code": "ecsktfkFM",
+            "deviceId": "4d49353895f5051d7f8bc559e4fc6a0a",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "OhZ4M8Akz": {
+            "code": "OhZ4M8Akz",
+            "deviceId": "4d49353895f5051d7f8bc559e4fc6a0a",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
