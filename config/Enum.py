@@ -22,6 +22,10 @@ class MailComponent:
     TITLE_MISSING_REWARD = "Apology for Missing Reward"
     DES_MISSING_REWARD = "Hello Player,\nWe’re sorry for the issue that caused you to miss your reward. Please accept this compensation as an apology.\nThank you for your understanding!"
 
+    # minigame
+    TITLE_MINIGAME_REWARD = "Your Mini-Game Reward Has Arrived!"
+    DES_MINIGAME_REWARD = "Congratulations on winning our mini-game! You are the lucky recipient of the weekly event and an exclusive Discord role (activated on Nighfall server)!\nThank you for participating! See you in the next event!"
+
 class TableName:
     MAIL_BOX = "mail_box"
     BLACKLIST = "blacklist_device"
