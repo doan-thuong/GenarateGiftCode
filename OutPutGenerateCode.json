@@ -1321,5 +1321,33 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "85YzRRU0z": {
+            "code": "85YzRRU0z",
+            "deviceId": "eee1568cde1392b513812e7a8e6025ea",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
+    },
+    {
+        "dzNa84DHa": {
+            "code": "dzNa84DHa",
+            "deviceId": "18f828c9b9bac0b6a094ecf2e0272ba1",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 6
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
