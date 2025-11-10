@@ -1349,5 +1349,23 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "CFCcch4fb": {
+            "code": "CFCcch4fb",
+            "deviceId": "a2bd82007e2e4718168e15ba0a4fb363",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                },
+                {
+                    "packId": 1,
+                    "packType": 7
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
