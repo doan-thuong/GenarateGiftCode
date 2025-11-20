@@ -1479,5 +1479,19 @@
             ],
             "rewards": []
         }
+    },
+    {
+        "XzUUVjeFD": {
+            "code": "XzUUVjeFD",
+            "deviceId": "dbdd298b2f31c8afc1be7427e89dd6af",
+            "giftCodeType": 1,
+            "packs": [
+                {
+                    "packId": 1,
+                    "packType": 0
+                }
+            ],
+            "rewards": []
+        }
     }
 ]
