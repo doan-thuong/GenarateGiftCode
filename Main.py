@@ -2,6 +2,7 @@ import service.HandleStringService as strService
 import service.GoogleService as gg
 import service.GiftCodeService as gcService
 import service.FireBaseService as fbService
+import time
 
 
 def main():
@@ -50,4 +51,7 @@ def main():
     print("Done")
 
 if __name__ == '__main__':
+    start = time.perf_counter()
     main()
+    end = time.perf_counter()
+    print(f"Time run: {end - start:.4f}s")
