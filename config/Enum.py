@@ -9,6 +9,12 @@ class StatusRewardMail(Enum):
     Claimed = 1
     NoReward = 2
 
+class DeviceType:
+    OutSource = 1
+    InHouse = 2
+    TestSDK = 3
+    Admin = 4
+
 class MailComponent:
     # Server booster
     TITLE_SERVER_BOOOSTER ="Server Booster Rewards!"

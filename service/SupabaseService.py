@@ -1,7 +1,7 @@
 from supabase import create_client, Client
 
 import config.SupabaseConfig as SupabaseConfig
-import config.ConfigMailSupabase as ConfigMailSupabase
+import config.ConfigTableSupabase as ConfigTableSupabase
 
 path_url = "UrlSupabase.key"
 path_key = "KeySupabase.key"
@@ -15,7 +15,7 @@ if url is None or key is None:
 supabase: Client = create_client(url, key)
 
 def insert_mail(mail_id, create_at, title, des, status, reward_status, reward, player_id, bonus_percent, table_name):
-    data = ConfigMailSupabase.mail_box(mail_id, create_at, title, des, status, reward_status, reward, player_id, bonus_percent)
+    data = ConfigTableSupabase.mail_box(mail_id, create_at, title, des, status, reward_status, reward, player_id, bonus_percent)
 
     try:
         res = supabase.table(table_name).insert(data).execute()
@@ -26,6 +26,17 @@ def insert_mail(mail_id, create_at, title, des, status, reward_status, reward, p
         print("Chi tiết lỗi:", e)
         
         return None
+    
+def insert_white_list(device_id, name, device_type):
+    data = ConfigTableSupabase.whitelist_device(device_id, name, device_type)
+
+    try:
+        res = supabase.table("whitelist_device").insert(data).execute()
+        
+        return res
+    except Exception as e:
+        print("Insert fail")
+        print("Chi tiết lỗi:", e)
 
 def read_data_from_table(name_table):
     response = supabase.table(name_table).select("*").execute()

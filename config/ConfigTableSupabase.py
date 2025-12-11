@@ -10,3 +10,10 @@ def mail_box(mail_id, create_at, title, des, status, reward_status, reward, play
         "player_id": player_id,
         "reward_bonus_percent": bonus_percent
     }
+
+def whitelist_device(device_id, name, device_type):
+    return {
+        "device_id": device_id,
+        "name": name,
+        "device_type": device_type
+    }
