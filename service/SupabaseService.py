@@ -43,6 +43,15 @@ def read_data_from_table(name_table):
 
     return response.data
 
+def read_data_from_table_with_sort(name_table, col, desc=False):
+    try:
+        response = supabase.table(name_table).select("*").order(col, desc=desc).execute()
+
+        return response.data
+    except Exception as e:
+        print("Chi tiết lỗi:", e)
+        return []
+
 def read_data_from_table_with_filter(name_table, col, condition):
     if not col and not condition:
         response = supabase.table(name_table).select("*").execute()
