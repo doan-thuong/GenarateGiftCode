@@ -17,3 +17,9 @@ def whitelist_device(device_id, name, device_type):
         "name": name,
         "device_type": device_type
     }
+    
+def blacklist_device(device_or_uid, reason):
+    return{
+        "device_or_uid": device_or_uid,
+        "reason": reason
+    }

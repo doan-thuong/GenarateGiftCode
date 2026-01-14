@@ -37,6 +37,21 @@ def insert_white_list(device_id, name, device_type):
     except Exception as e:
         print("Insert fail")
         print("Chi tiết lỗi:", e)
+        
+        return None
+        
+def insert_black_list(infor, reason):
+    data = ConfigTableSupabase.blacklist_device(infor, reason)
+
+    try:
+        res = supabase.table("blacklist_device").insert(data).execute()
+        
+        return res
+    except Exception as e:
+        print("Insert fail")
+        print("Chi tiết lỗi:", e)
+        
+        return None
 
 def read_data_from_table(name_table):
     response = supabase.table(name_table).select("*").execute()
